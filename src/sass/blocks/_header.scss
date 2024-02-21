@@ -1,0 +1,43 @@
+* {
+    color: #fefefe;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 54px;
+    &__logo {
+        display: flex;
+        width: 251px;
+        text-decoration: none;
+        .icon-runer {
+            font-size: 45px;
+        }
+        &_text {
+            font-size: 22px;
+            span {
+                font-size: 13px;
+            }
+        }
+    }
+    &__official {
+        width: 215px;
+        text-align: center;
+        font-size: 12px;
+        span {
+            display: block;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__phone {
+        font-size: 18px;
+        text-decoration: none;
+        margin-bottom: 4px;
+    }
+}
