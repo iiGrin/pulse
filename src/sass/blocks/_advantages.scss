@@ -23,22 +23,22 @@
             font-size: 70px;
             color: #C70101;
         }
-        &__header {
-            margin-top: 38px;
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 21px;
-            text-align: center;
-        }
-        &__descr {
-            margin-top: 21px;
-            font-size: 14px;
-            text-align: center;
-            line-height: 18px;
-            color: #0d0d0d;
-            a {
-                color: #C70101;
-            }
+    }
+    &__item-header {
+        margin-top: 38px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        text-align: center;
+    }
+    &__item-descr {
+        margin-top: 21px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 18px;
+        color: #0d0d0d;
+        a {
+            color: #C70101;
         }
     }
 }
