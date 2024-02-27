@@ -21,7 +21,7 @@
         width: 30%;
         span {
             font-size: 70px;
-            color: #C70101;
+            color: $main-color;
         }
     }
     &__item-header {
@@ -38,7 +38,39 @@
         line-height: 18px;
         color: #0d0d0d;
         a {
-            color: #C70101;
+            color: $main-color;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .advantages {
+        min-height: 800px;
+        padding: 35px 10px 30px 10px;
+        &__header {
+            width: 240px;
+            font-size: 24px;
+        }
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;            
+            margin-top: 30px;
+            :nth-child(1) {
+                margin-top: 0;
+            }
+        }
+        &__item {
+            width: 75%;
+            margin-top: 50px;
+            span {
+                font-size: 60px;
+            }
+        }
+        &__item-header {
+            margin-top: 14px;
+        }
+        &__item-descr {
+            margin-top: 10px;
         }
     }
 }

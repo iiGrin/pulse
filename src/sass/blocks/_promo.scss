@@ -1,4 +1,5 @@
 .promo {
+    position: relative;
     box-sizing: border-box;
     min-height: 650px;
     padding: 21px 0px 93px 0px;
@@ -46,6 +47,49 @@
         font-size: 16px;
         a {
             text-transform: uppercase;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .promo {
+        position: relative;
+        min-height: 550px;
+        padding: 71px 10px 20px 10px;
+        &__wrapper {
+            margin-top: 0px;
+        }
+        &__header {
+            width: 275px;
+            font-size: 22px;
+            line-height: 26px;
+        }
+        &__subheader {
+            width: 240px;
+            margin-top: 5px;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: end;
+        }
+        &__reasons-items {
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 40px;
+            :nth-child(1) {
+                margin-top: 0px;
+            }
+        }
+        &__reasons-item {
+            margin-top: 20px;
+            font-size: 12px;
+            span {
+                font-size: 40px;
+            }
+        }
+        &__link {
+            font-size: 13px;
         }
     }
 }

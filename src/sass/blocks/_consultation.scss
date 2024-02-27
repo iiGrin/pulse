@@ -39,3 +39,37 @@
         margin-top: 11px;
     }
 }
+
+@media (max-width: 575px) {
+    .consultation {
+        min-height: 500px;
+        padding: 35px 10px 25px 10px;
+        &__header {
+            width: 90%;
+            font-size: 18px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 22px;
+        }
+        &__subheader {
+            width: 80%;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            margin: 25px auto;
+        }
+        &__form {
+            box-sizing: border-box;
+            margin: 0 auto;
+            padding: 0 10px;
+            :nth-child(4) {
+                margin-top: 60px;
+            }
+        }
+        &__form-input {
+            margin-top: 25px;
+            height: 40px;
+            font-size: 12px;
+        }
+    }
+}
