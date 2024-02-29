@@ -21,6 +21,22 @@
     }
 }
 
+@media (max-width: 991px) {
+    .button {
+        padding: 0;
+        &_main { 
+            width: 262px;
+            height: 46px;
+            font-size: 14px;
+            margin-top: 50px;
+        }
+        &_consultation {
+            height: 44px;
+            font-size: 14px;
+        }
+    }
+}
+
 @media (max-width: 575px) {
     .button {
         &_main {
@@ -32,7 +48,7 @@
         }
         &_consultation {
             width: 236px;
-            height: 40px;
+            height: 36px;
             margin: 0 auto;
             font-size: 12px;
         }

@@ -5,48 +5,79 @@
     padding: 21px 0px 93px 0px;
     color: #fefefe;
     background: url("../img/promo_bg.jpeg") center (center/cover) no-repeat;
+
     a {
         color: #fefefe;
     }
+
     &__wrapper {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         margin-top: 90px;
     }
+
     &__header {
         margin: 0;
         font-size: 42px;
-        line-height: 42px;
         text-transform: uppercase;
     }
+
     &__subheader {
         margin: 0px;
         margin-top: 17px;
-        line-height: 24px;
         font-size: 24px;
         text-transform: uppercase;
     }
+
     &__reasons-items {
         display: flex;
         justify-content: space-between;
         width: 424px;
         margin-top: 60px;
     }
+
     &__reasons-item {
         width: 130px;
         height: 100%;
         font-size: 14px;
         text-align: center;
+
         span {
             font-size: 46px;
         }
     }
+
     &__link {
         margin-top: 16px;
         font-size: 16px;
+
         a {
             text-transform: uppercase;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .promo {
+        min-height: 520px;
+        padding: 21px 20px 30px 20px;
+
+        &__wrapper {
+            margin-top: 60px;
+        }
+        &__header {
+            font-size: 36px;
+        }
+        &__subheader {
+            font-size: 18px;
+        }
+        &__reasons-items {
+            width: 400px;
+            margin-top: 35px;
+        }
+        &__link {
+            font-size: 14px;
         }
     }
 }
@@ -56,14 +87,17 @@
         position: relative;
         min-height: 550px;
         padding: 71px 10px 20px 10px;
+
         &__wrapper {
             margin-top: 0px;
         }
+
         &__header {
             width: 275px;
             font-size: 22px;
             line-height: 26px;
         }
+
         &__subheader {
             width: 240px;
             margin-top: 5px;
@@ -71,23 +105,28 @@
             line-height: 20px;
             text-align: end;
         }
+
         &__reasons-items {
             flex-direction: column;
             align-items: center;
             width: 80%;
             margin: 0 auto;
             margin-top: 40px;
+
             :nth-child(1) {
                 margin-top: 0px;
             }
         }
+
         &__reasons-item {
             margin-top: 20px;
             font-size: 12px;
+
             span {
                 font-size: 40px;
             }
         }
+
         &__link {
             font-size: 13px;
         }
