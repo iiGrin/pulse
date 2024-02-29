@@ -7,11 +7,12 @@
     <title>Pulse</title>
     <link rel="stylesheet" href="css/normalize.min.css"/>
     <link rel="stylesheet" href="css/icon-fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <div class="promo">
+    <section class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -32,9 +33,9 @@
                 </div>
                 
             </header>
-            <div class="menu">
-                <a href="#advantages" class="menu__link">Наши преимущества</a>
-                <a href="#consultation" class="menu__link">Консультация по подбору</a>
+            <div class="menu menu_hidden">
+                <a href="#advantages" class="menu_link">Наши преимущества</a>
+                <a href="#consultation" class="menu_link">Консультация по подбору</a>
             </div>
             <a href="#" class="logo-mobile">
                 <span class="icon-runer">RunSmart</span>
@@ -77,9 +78,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="advantages" id="advantages">
+    <section class="advantages" id="advantages">
         <div class="container">
             <h2 class="advantages__header">наши преимущества</h2>
             <div class="advantages__wrapper">
@@ -102,21 +103,35 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="consultation" id="consultation">
+    <section class="consultation" id="consultation">
         <div class="container">
             <h2 class="consultation__header">Получите бесплатную консультацию по подбору пульсометра</h2>
             <h3 class="consultation__subheader">Просто заполните форму заявки и мы перезвоним вам в течении 10 минут</h3>
-            <div class="consultation__form">
-                <input type="text" placeholder="Ваше имя" name="" id="" class="consultation__form-input">
-                <input type="text" placeholder="Ваш телефон" name="" id="" class="consultation__form-input">
-                <input type="text" placeholder="E-mail" name="" id="" class="consultation__form-input">
+            <form action="#" class="consultation__form">
+                <input required type="text" placeholder="Ваше имя" name="name" id="" class="consultation__form-input">
+                <input required type="number" placeholder="Ваш телефон" name="phone" id="" class="consultation__form-input">
+                <input required type="email" placeholder="E-mail" name="email" id="" class="consultation__form-input">
                 <button class="button button_consultation">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel__inner">
+                <div><img src="img/slide1.jpeg" alt=""></div>
+                <div><img src="img/slide2.jpeg" alt=""></div>
+                <div><img src="img/slide3.jpeg" alt=""></div>
             </div>
         </div>
-    </div>
+    </section>
 
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

@@ -28,15 +28,15 @@
             margin-top: 0px;
         }
         :nth-child(4) {
-            margin-top: 17px;
+            margin-top: 20px;
         }
-    }
-    &__form-input {
-        box-sizing: border-box;
-        width: 100%;
-        height: 54px;
-        padding-left: 21px;
-        margin-top: 11px;
+        input {
+            box-sizing: border-box;
+            width: 100%;
+            height: 54px;
+            padding: 20px;
+            margin-top: 15px;
+        }
     }
 }
 
@@ -65,11 +65,11 @@
             :nth-child(4) {
                 margin-top: 60px;
             }
-        }
-        &__form-input {
-            margin-top: 25px;
-            height: 40px;
-            font-size: 12px;
+            input {
+                margin-top: 25px;
+                height: 40px;
+                font-size: 12px;
+            }
         }
     }
 }
