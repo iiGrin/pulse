@@ -7,16 +7,16 @@
         display: flex;
         width: 251px;
         text-decoration: none;
-
         .icon-runer {
             font-size: 45px;
         }
 
         &_text {
             font-size: 22px;
-
+            font-weight: 500;
             span {
                 font-size: 13px;
+                font-weight: 300;
             }
         }
     }
@@ -25,6 +25,7 @@
         width: 215px;
         text-align: center;
         font-size: 12px;
+        font-weight: 500;
 
         span {
             display: block;
@@ -41,6 +42,7 @@
 
     &__phone {
         font-size: 18px;
+        font-weight: 700;
         text-decoration: none;
         margin-bottom: 4px;
     }
