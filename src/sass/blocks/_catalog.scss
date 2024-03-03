@@ -39,8 +39,11 @@
     &__content {
         margin-top: 60px;
         display: none;
-        justify-content: space-between;
+        justify-content: flex-start;
         flex-wrap: wrap;
+        :nth-child(3n+3) {
+            margin-right: 0px;
+        }
         &_active {
             display: flex;
         }
@@ -53,6 +56,7 @@
         padding: 20px 20px 26px 20px;
         overflow: hidden;
         margin-bottom: 20px;
+        margin-right: 20px;
         &__img {
             max-width: 100%;
             height: 200px;
@@ -111,7 +115,7 @@
         }
         &__wrapper {
             display: flex;
-            width: calc(200% + 40px);
+            width: calc(200% + 80px);
         }
         &__content {
             width: 50%;
@@ -169,6 +173,78 @@
             &:hover {
                 color: $main-color;
             }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .catalog {
+        padding: 0px 20px 50px 20px;
+        &__tabs {
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 35px;
+        }
+        &__tab {
+            max-width: 223px;
+            height: 40px;
+            font-size: 16px;
+            line-height: 40px;
+        }
+        &__content {
+            margin-top: 30px;
+            justify-content: center;
+            :nth-child(3n+3) {
+                margin-right: 20px;
+            }
+        }
+        &-item {
+            width: 240px;
+            &__subtitle {
+                font-size: 13px;
+            }
+            &__descr {
+                font-size: 12px;
+            }
+            &__link {
+                font-size: 13px;
+            }
+            &__old-price {
+                font-size: 13px;
+            }
+            &__current-price {
+                font-size: 16px;
+            }
+            &__list {
+                li {
+                    font-size: 12px;
+                }
+            }
+            &__back {
+                font-size: 13px;
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .catalog {
+        padding: 0px 10px 30px 10px;
+        &__tabs {
+            margin-top: 25px;
+            flex-direction: column;
+            :nth-child(1) {
+                margin-top: 0px;
+            }
+        }
+        &__tab {
+            max-width: 550px;
+            margin-top: 10px;
+        }
+        &__content {
+            padding: 0px 10px;
+        }
+        &-item {
+            width: 300px;
+            margin-right: 0px;
         }
     }
 }

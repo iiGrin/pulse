@@ -4,16 +4,7 @@
     padding: 101px 0px 108px 0px;
     background: url("../img/consultation_bg.jpeg") center (center/cover) no-repeat;
     color: #fefefe;
-    &__header {
-        width: 800px;
-        margin: 0;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 54px;
-        text-align: left;
-        text-transform: uppercase;
-    }
-    &__subheader {
+    &__subtitle {
         width: 425px;
         font-size: 20px;
         font-weight: 500;
@@ -40,16 +31,11 @@
     }
 }
 
-@media (max-width: 989px) {
+@media (max-width: 991px) {
     .consultation {
         min-height: 500px;
         padding: 35px 20px 25px 20px;
-        &__header {
-            width: 555px;
-            font-size: 24px;
-            line-height: 28px;
-        }
-        &__subheader {
+        &__subtitle {
             width: 445px;
             font-size: 20px;
             line-height: 24px;
@@ -73,14 +59,7 @@
     .consultation {
         min-height: 500px;
         padding: 35px 10px 25px 10px;
-        &__header {
-            width: 90%;
-            font-size: 18px;
-            margin: 0 auto;
-            text-align: center;
-            line-height: 22px;
-        }
-        &__subheader {
+        &__subtitle {
             width: 80%;
             font-size: 14px;
             line-height: 18px;
