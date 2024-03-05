@@ -120,4 +120,7 @@ $(document).ready(function () {
   validateForms("#consultation-form");
   validateForms("#modal-order form");
   validateForms("#modal-consultation form");
+
+  $('input[name=phone').mask("+7 (999) 999-9999");
 });
+
