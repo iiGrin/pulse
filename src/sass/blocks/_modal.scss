@@ -40,6 +40,15 @@
     &_mini {
         min-height: 140px;
     }
+    .error {
+        border: 2px solid $main-color;
+        text-align: center;
+    }
+    label.error {
+        border: none;
+        text-align: center;
+        margin-bottom: 15px;
+    }
 }
 
 #modal-consultation, #modal-order, #modal-thanks {
@@ -51,7 +60,7 @@
             right: 5px;
             top: 5px;
         }
-        width: 300px;
+        width: 300px;xw
         .modal__descr {
             margin-bottom: 10px;
         }

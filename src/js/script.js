@@ -63,25 +63,61 @@ $(document).ready(function () {
         $(".catalog-item__list").eq(i).toggleClass("catalog-item__list_active");
       });
     });
-  };
+  }
 
   toggleSlide(".catalog-item__link");
   toggleSlide(".catalog-item__back");
 
   //modal
 
-  $('[data-modal=modal-consultation]').on('click', function() {
-    $('.overlay, #modal-consultation').fadeIn('slow');
+  $("[data-modal=modal-consultation]").on("click", function () {
+    $(".overlay, #modal-consultation").fadeIn("slow");
   });
 
-  $('.modal__close').on('click', function() {
-    $('.overlay, #modal-consultation, #module-thanks, #modal-order').fadeOut('slow');
+  $(".modal__close").on("click", function () {
+    $(".overlay, #modal-consultation, #module-thanks, #modal-order").fadeOut(
+      "slow"
+    );
   });
 
-  $('.button_mini').each(function(i) {
-    $(this).on('click', function() {
-      $('#modal-order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
-      $('.overlay, #modal-order').fadeIn('slow');
+  $(".button_mini").each(function (i) {
+    $(this).on("click", function () {
+      $("#modal-order .modal__descr").text(
+        $(".catalog-item__subtitle").eq(i).text()
+      );
+      $(".overlay, #modal-order").fadeIn("slow");
     });
   });
+
+  function validateForms(form) {
+    $(form).validate({
+      rules: {
+        name: {
+          required: true,
+          minlength: 2,
+        },
+        phone: "required",
+        email: {
+          required: true,
+          email: true,
+        },
+      },
+      messages: {
+        name: {
+          required: "We need your name!",
+          minlength: jQuery.validator.format(
+            "At least {0} characters required!"
+          ),
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+      },
+    });
+  }
+
+  validateForms("#consultation-form");
+  validateForms("#modal-order form");
+  validateForms("#modal-consultation form");
 });
