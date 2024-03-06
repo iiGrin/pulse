@@ -26,6 +26,7 @@
     "not dead"
   ],
   "dependencies": {
+    "animate.css": "^4.1.1",
     "postcss-cli": "^11.0.0"
   }
 }

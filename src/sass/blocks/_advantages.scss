@@ -17,6 +17,15 @@
             font-size: 70px;
             color: $main-color;
         }
+        .icon-pulse_animated {
+            animation-name: heartbeat;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
     }
     &__item-header {
         margin-top: 38px;
@@ -76,4 +85,5 @@
             margin-top: 10px;
         }
     }
+
 }

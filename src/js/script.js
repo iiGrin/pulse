@@ -118,9 +118,56 @@ $(document).ready(function () {
   }
 
   validateForms("#consultation-form");
-  validateForms("#modal-order form");
   validateForms("#modal-consultation form");
+  validateForms("#modal-order form");
 
   $('input[name=phone').mask("+7 (999) 999-9999");
+
+  // $('form').submit(function(e) {
+  //   e.preventDefault();
+
+  //   $.ajax({
+  //     type: "POST",
+  //     url: "mailer/smart.php",
+  //     data: $(this).serialize()
+  //   }).done(function() {
+  //     $(this).find("input").val("");
+  //     $('#modal-consultation, #modal-order').fadeOut();
+  //     $('.overlay, #modal-thanks').fadeIn('slow');
+  //     $("form").trigger('reset');
+  //   });
+
+  //   return false;
+  // });
+  $('form').submit(function(e) {
+    e.preventDefault();
+
+    if (!$(this).valid()) {
+      return;
+    };
+
+    $.ajax({
+        type: "POST",
+        url: "mailer/smart.php",
+        data: $(this).serialize()
+    }).done(function() {
+        $(this).find("input").val("");
+        $('#modal-consultation, #modal-order').fadeOut();
+        $('.overlay, #modal-thanks').fadeIn('slow');
+
+        $('form').trigger('reset');
+    });
+    return false;
+});
+//smooth and pageup
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 1600) {
+      $('.pageup').fadeIn();
+    } else {
+      $('.pageup').fadeOut();
+    };
+  });
+
+  new WOW().init();
 });
 
